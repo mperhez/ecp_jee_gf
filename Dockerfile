@@ -1,5 +1,5 @@
 #TO BUILD: docker build --build-arg un=???YOUR USER??? --build-arg uid=???YOUR USER ID??? . -t uol/cs/co3090/ecp_jee_gf:4.1.2
-#TO RUN: docker run --name ecp_jee_gf --rm -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v ???HOST PATH???:home/???YOUR USER ID???/workspace -p 4848:4848 -p 8080:8080 uol/cs/co3090/ecp_jee_gf:4.1.2 ./eclipse/eclipse
+#TO RUN: docker run --name ecp_jee_gf --rm -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v ???HOST PATH??? :home/???YOUR USER ID???/workspace -p 4848:4848 -p 8080:8080 uol/cs/co3090/ecp_jee_gf:4.1.2 ./eclipse/eclipse
 FROM openjdk:8 as ecpjee
 ARG un=ecpjeegf
 ARG uid=1000
